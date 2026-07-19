@@ -12,10 +12,12 @@ is growing into something broader.
 
 ## The long-term vision
 
-WetNote is an **umbrella brand for underwater projects**. Amphora typology
-is the start; the roadmap reaches into other underwater work such as:
+WetNote is an **umbrella brand for underwater projects** — one brand, many
+tools. Amphora typology is the start; the roadmap reaches into other
+underwater work such as:
 
 - 🏺 Amphora typology & classification *(first tool — in development)*
+- 🎥 Cave-map dive video player *(planned)*
 - 🕸️ Ghost-net detection & removal diving
 - 📐 Photogrammetry & 3D reconstruction
 - 🗺️ Underwater site mapping
@@ -25,19 +27,24 @@ The goal: a shared toolkit any underwater-project maker can use —
 independent divers, universities, and diving communities alike. Free while
 the research matures, with premium options considered later.
 
-## Repositories (so far)
+## How it's organised
 
-| Repo | What it is |
+WetNote is **multi-repo**: each tool and surface lives in its own
+repository, and one repo — `core_docs` — is the single source of truth that
+every other repo follows. Each repo is maintained by a dedicated AI agent
+working under human approval, coordinating through the `communication` repo.
+
+| Repo | Role |
 |---|---|
-| `core_docs` | Source of truth — standards, decisions, and project rules every other repo follows |
+| `core_docs` | Source of truth — standards, decisions, and rules every repo follows |
 | `communication` | Cross-repo coordination and messaging |
-| `www.wetnote.com` | The public landing page |
-| `amphai` | The amphora typology app (image → estimated type) |
-| `wetnote-login` | Authentication |
+| `www.wetnote.com` | Public landing page and web shell |
+| `amphai` | The amphora-typology app (image → estimated type) |
+| `wetnote-functions` | Shared backend (Cloud Functions) for all WetNote apps |
+| `thesis-research` | The research trail behind AmphorAI — methodology, sources, provenance |
 | `.github` | This organization profile |
 
-*More repos join as the project grows (research/thesis and backend
-services are planned).*
+*More repos join as the project grows.*
 
 ## Who's behind it
 
@@ -47,4 +54,10 @@ solo.
 
 ## Status
 
-Early development & research — 2026. Watch this space. 🐚
+Early development & research — 2026.
+
+- 🏺 **AmphorAI** — amphora typology app, in active development
+- 🌐 **wetnote.com** — landing page & web shell, in progress
+- 🎥 **caveline** — cave-map video player, planned (concept stage)
+
+Watch this space. 🐚
