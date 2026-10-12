@@ -30,18 +30,18 @@ the research matures, with premium options considered later.
 ## How it's organised
 
 WetNote is **multi-repo**: each tool and surface lives in its own
-repository, and one repo — `core_docs` — is the single source of truth that
+repository, and one repo — `wn-core-docs` — is the single source of truth that
 every other repo follows. Each repo is maintained by a dedicated AI agent
-working under human approval, coordinating through the `communication` repo.
+working under human approval, coordinating through the `wn-communication` repo.
 
 | Repo | Role |
 |---|---|
-| `core_docs` | Source of truth — standards, decisions, and rules every repo follows |
-| `communication` | Cross-repo coordination and messaging |
+| `wn-core-docs` | Source of truth — standards, decisions, and rules every repo follows |
+| `wn-communication` | Cross-repo coordination and messaging |
 | `www.wetnote.com` | Public landing page and web shell |
-| `amphai` | The amphora-typology app (image → estimated type) |
-| `wetnote-functions` | Shared backend (Cloud Functions) for all WetNote apps |
-| `thesis-research` | The research trail behind AmphorAI — methodology, sources, provenance |
+| `kaide` | Kaide — the amphora-typology app (image → estimated type) |
+| `wn-functions` | Shared backend (Cloud Functions) for all WetNote apps |
+| `thesis-research` | The research trail behind Kaide — methodology, sources, provenance |
 | `.github` | This organization profile |
 
 *More repos join as the project grows.*
@@ -56,7 +56,7 @@ solo.
 
 Early development & research — 2026.
 
-- 🏺 **AmphorAI** — amphora typology app, in active development
+- 🏺 **Kaide** — amphora typology app, in active development
 - 🌐 **wetnote.com** — landing page & web shell, in progress
 - 🎥 **caveline** — cave-map video player, planned (concept stage)
 
